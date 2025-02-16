@@ -1,0 +1,9 @@
+services:
+  mr-data_nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mr-data-docker
+    image: mrdata_nginx:v0.1
+    ports:
+      - "30000:80"
